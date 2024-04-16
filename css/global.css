@@ -1,0 +1,59 @@
+:root {
+	--pink: #DC186E;
+	--cream: #fef9ef;
+	--white: #ffffff;
+	--text-color: #353535;
+
+	--header-font-family: Cubano, sans-serif;
+	--body-font-family: Lato, Helvetica, Arial, sans-serif;
+
+	--max-width: 1400px;
+
+	--width-large-screens: 94%;
+	--width-medium-screens: calc(100% - 48px);
+	--width-small-screens: calc(100% - 32px);
+}
+
+body {
+	font-family: var(--body-font-family);
+	font-size: 1.125rem;
+	line-height: 1.6;
+	color: var(--text-color);
+	background-color: var(--cream);
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	margin: 0 auto;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: var(--width-small-screens);
+	max-width: var(--max-width);
+
+	@media screen and (min-width: 782px) {
+		width: var(--width-medium-screens);
+	}
+
+	@media screen and (min-width: 1024px) {
+		width: var(--width-large-screens);
+	}
+
+}
+
+
+#main {
+	padding-bottom: 1.5rem;
+	@media screen and (min-width: 782px) {
+		padding-bottom: 3rem;
+	}
+	@media screen and (min-width: 1024px) {
+		padding-bottom: 6rem;
+	}
+
+	article {
+
+		max-width: 800px;
+	}
+}
