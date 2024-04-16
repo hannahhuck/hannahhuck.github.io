@@ -13,6 +13,13 @@
 	--width-medium-screens: calc(100% - 48px);
 	--width-small-screens: calc(100% - 32px);
 }
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	min-height: 100%;
+}
 
 body {
 	font-family: var(--body-font-family);
@@ -22,6 +29,10 @@ body {
 	background-color: var(--cream);
 	padding: 0;
 	margin: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+
 }
 
 .container {
@@ -44,6 +55,7 @@ body {
 
 
 #main {
+  flex: 1;
 	padding-bottom: 1.5rem;
 	@media screen and (min-width: 782px) {
 		padding-bottom: 3rem;
