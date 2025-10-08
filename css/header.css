@@ -1,33 +1,29 @@
 header {
   padding: 1.5rem 0;
+  color: var(--pink);
+  @media screen and (min-width: 782px) {
+    padding: 3rem 0;
+  }
+  @media screen and (min-width: 1024px) {
+    padding: 6rem 0;
+  }
 
-	@media screen and (min-width: 782px) {
-		padding: 3rem 0;
-	}
-	@media screen and (min-width: 1024px) {
-		padding: 6rem 0;
-	}
-
-
-
-	color: var(--pink);
-
-	figure {
-		text-align: right;
-		position: relative;
-		margin: 0 auto;
-		img {
-			position: relative;
-			display: block;
-			height: auto;
-			width: 100%;
-			margin: 0;
-			aspect-ratio: 16 / 9;
-			object-fit: cover;
-			@media screen and (min-width: 1024px) {
-				width: 75%;
-				margin-left: auto;
-			}
-		}
-	}
+  figure {
+    text-align: right;
+    position: relative;
+    margin: 0 auto;
+    img {
+      position: relative;
+      display: block;
+      height: auto;
+      width: 100%;
+      margin: 0;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      @media screen and (min-width: 1024px) {
+        width: 75%;
+        margin-left: auto;
+      }
+    }
+  }
 }
